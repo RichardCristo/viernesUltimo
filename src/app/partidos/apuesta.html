@@ -1,0 +1,25 @@
+<div *ngIf="mostrarCard" class="apuesta-card">
+    <div class="equipo-info">
+      <div class="equipo-local">
+        <img src="../../assets/logo1.png" alt="Logo 1">
+        {{ equipoLocal }}
+      </div>
+      <div class="equipo-visitante">
+        {{ equipoVisitante }}
+        <img src="../../assets/logo2.png" alt="Logo 2">
+      </div>
+    </div>
+    <div class="opciones-apuesta">
+      <div>
+        <p>Gana 1</p>
+      </div>
+      <div>
+        <p>Empate</p>
+      </div>
+      <div>
+        <p>Gana 2</p>
+      </div>
+      <input type="number" [(ngModel)]="montoApuesta" placeholder="Monto de apuesta">
+    </div>
+    <button>Realizar Apuesta</button>
+  </div>
